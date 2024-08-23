@@ -54,3 +54,53 @@ lists.
 - E-book integration and reading
 - Audiobook support
 - Multilingual support
+
+---
+
+## GitHub Feature Branch Workflow
+
+1. Ensure your local main branch is up-to-date
+
+```shell
+git checkout main
+git pull origin main
+```
+
+2. Create and switch to a new feature branch
+
+```text
+git checkout -b feature/your-feature-name
+```
+
+3. Develop your feature
+
+Make your changes in the feature branch. You can use your preferred code editor or IDE for this step.
+
+4. Stage your changes
+
+```text
+git add .
+```
+
+5. Commit your changes
+
+```shell
+git commit -m "Implement feature: your-feature-name"
+```
+
+6. Push your feature branch to the remote repository
+
+```shell
+git push -u origin feature/your-feature-name
+```
+
+7. Create a Pull Request (Merge Request)
+
+- Go to your repository on GitHub.
+- Click on the "Pull requests" tab.
+- Click the "New pull request" button.
+- Set the base branch to main and the compare branch to feature/your-feature-name.
+- Click "Create pull request".
+- Add a title and description for your pull request.
+- Assign reviewers if necessary.
+- Click "Create pull request" to submit it for review.
