@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+}
+
+//Background image needs to be redone at some point, this is not great but works for now
+.bg-img {
+  position: fixed;
+  object-fit: cover;
+  background-image: url("./images/wp4426590.jpg");
+  background-size: cover;
+  background-color: rgb(206, 84, 68);
+}
+
+form {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 55vh;
+  width: 50vh;
+  border-radius: 20px;
+  h2 {
+    height: 10vh;
+    color:white;
+  }
+  // margin-left: 20px 20px 50px 50px;
+  button {
+    // float: right;
+    display: flex;
+    margin-top: 20%;
+    width: 15vh;
+    font-size: larger;
+    flex-direction: column;
+  }
+
+  background-color: rgba(105, 70, 17, 0.76);
+  // margin: 200px;
+}
+mat-form-field {
+  display: block;
+  width: 80%;
+  position: relative;
+}
