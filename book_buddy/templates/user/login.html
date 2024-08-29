@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="card" style="background-color: rgba(255, 255, 255, 0.8)">
+            <div class="card-header">
+                <h5>Book Buddy: Log In</h5>
+            </div>
+            <div class="card-body">
+                <!-- Display form fields -->
+                <div class="mb-3">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <a href="{% url 'register' %}">Don't have an account?</a>
+            </div>
+        </div>
+    </form>
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/R.9cb7fd1d5dfcae4b35040b8e0c693f1d?rik=dJ5UN7RW1eGKVQ&riu=http%3a%2f%2fwww.shutterstock.com%2fblog%2fwp-content%2fuploads%2fsites%2f5%2f2016%2f09%2fgeorge-peabody-library-1.jpg&ehk=pKkkKQn3Mo13Dmnpib6xlI%2fUgJoCsb0pdoyBOGJSPpc%3d&risl=1&pid=ImgRaw&r=0');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+{% endblock %}

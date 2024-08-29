@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="card" style="background-color: rgba(255, 255, 255, 0.8)">
+            <div class="card-header">
+                <h5>Book Buddy: Sign Up</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn btn-primary">Signup</button>
+            </div>
+            <div class="card-footer text-body-secondary">
+
+                <a href="{% url 'login' %}">Already have account?</a>
+            </div>
+        </div>
+    </form>
+    <style>
+    body {
+            background-image: url('https://i.pinimg.com/originals/60/a6/ce/60a6ce935b6c325fd9aeffb24c4aa1a7.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+{% endblock %}
