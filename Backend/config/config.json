@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "user",
+    "database": "bookclub_db",
+    "password": "userpassword",
+    "port": 3306
+}
